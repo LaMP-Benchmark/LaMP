@@ -1,1 +1,6 @@
-# LaMP
+# LaMP: When Large Language Models Meet Personalization
+
+This paper highlights the importance of personalization in the current state of natural language understanding and generation and introduces the LaMP benchmark --- a novel benchmark for training and evaluating language models for producing personalized outputs. LaMP offers a comprehensive evaluation framework with diverse language tasks and multiple entries for each user profile. It consists of seven personalized tasks, spanning across three classification and four text generation tasks. We further propose a retrieval augmentation approach that retrieves personalized items from user profiles to construct personalized prompts for large language models. The experiments conducted to establish fine-tuned and zero-shot baseline results for the benchmark conclude that LMs utilizing profile augmentation outperform their counterparts that do not factor in profile information.
+
+## License
+LaMP (codes and data creation methods) is licensed by Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). See the [CC-BY-NC-SA-4.0.txt](CC-BY-NC-SA-4.0.txt) file for details. For the datasets in this benchmark, you should follow their license.
