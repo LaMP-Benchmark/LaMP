@@ -4,9 +4,9 @@ This paper highlights the importance of personalization in the current state of 
 
 ## Data
 
-Will be released soon!
+You can download all the datasets from the links provided [here](https://lamp-benchmark.github.io/download). However, we provided the minimal ids to generate the dataset using our codes for the Personalized Email Subject Generation because this dataset is not publicly accessible. Follow the following section to generate that dataset.
 
-### Avocado
+### LaMP 6: Personalized Email Subject Generation (Avocado dataset)
 
 The [Avocado](https://catalog.ldc.upenn.edu/LDC2015T03) dataset is not publicly accessible. However, we provided the samples' id and the code we used to generate our dataset. Therefore, if you get access to the dataset, you can quickly generate the dataset with the same format as the other datasets in LaMP using the following code:
 
