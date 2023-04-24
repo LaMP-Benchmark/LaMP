@@ -45,7 +45,7 @@ python eval/eval_task.py \
     --output_file /*Address to the results file*/ \
 ```
 
-The output file should follow the exact same format as the gold files:
+The pred files should follow the exact same format as the gold files:
 
 ```
 {
