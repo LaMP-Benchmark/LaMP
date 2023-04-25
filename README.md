@@ -64,5 +64,20 @@ The pred files should follow the exact same format as the gold files:
 }
 ```
 
+## Reference
+
+[LaMP: When Large Language Models Meet Personalization](https://arxiv.org/abs/2304.11406)
+
+```
+@misc{salemi2023lamp,
+      title={LaMP: When Large Language Models Meet Personalization}, 
+      author={Alireza Salemi and Sheshera Mysore and Michael Bendersky and Hamed Zamani},
+      year={2023},
+      eprint={2304.11406},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
+
 ## License
 LaMP (codes and data creation methods) is licensed by Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). See the [CC-BY-NC-SA-4.0.txt](CC-BY-NC-SA-4.0.txt) file for details. For the datasets in this benchmark, you should follow their license.
