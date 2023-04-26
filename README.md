@@ -39,8 +39,8 @@ Evaluate one task:
 
 ```
 python eval/eval_task.py \
-    --golds_json /*Address to all gold labels for all tasks zipped in a file*/ \
-    --preds_json /*Address to all predictions for all tasks zipped in a file*/ \
+    --golds_json /*Address to gold labels for the task as a json file*/ \
+    --preds_json /*Address to predictions for the task as a json file*/ \
     --task_name /*Name of the task [LaMP_1, LaMP_2, LaMP_3, LaMP_4, LaMP_5, LaMP_6, LaMP_7]*/
     --output_file /*Address to the results file*/ \
 ```
