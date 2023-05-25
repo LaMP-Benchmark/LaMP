@@ -36,6 +36,8 @@ parser.add_argument("--output_dir", required=True, help="The directory to genera
 parser.add_argument("--input_question_file_train", required=True, help="The address to the train_questions.json file")
 parser.add_argument("--input_question_file_dev", required=True, help="The address to the dev_questions.json file")
 parser.add_argument("--input_question_file_test", required=True, help="The address to the test_questions.json file")
+parser.add_argument("--time_based_separation", action="store_true", help="Stores extra information about user and date")
+
 
 if __name__ == "__main__":
     opts = parser.parse_args()
@@ -77,7 +79,10 @@ if __name__ == "__main__":
             pid = p['text']
             p['text'] = database[pid]['content']
             p['title'] = database[pid]['subject']
-        inps_train.append({"id" : sample['id'], "input" : sample['input'], "profile" : sample['profile']})
+        if opts.time_based_separation:
+            inps_train.append({"id" : sample['id'], "input" : sample['input'], "profile" : sample['profile'], "user_id" : sample['user_id']})
+        else:
+            inps_train.append({"id" : sample['id'], "input" : sample['input'], "profile" : sample['profile']})
         outs_train.append({"id" : sample['id'], "output" : sample['output']})
 
     inps_dev, outs_dev = [], []
@@ -89,7 +94,10 @@ if __name__ == "__main__":
             pid = p['text']
             p['text'] = database[pid]['content']
             p['title'] = database[pid]['subject']
-        inps_dev.append({"id" : sample['id'], "input" : sample['input'], "profile" : sample['profile']})
+        if opts.time_based_separation:
+            inps_dev.append({"id" : sample['id'], "input" : sample['input'], "profile" : sample['profile'], "user_id" : sample['user_id']})
+        else:
+            inps_dev.append({"id" : sample['id'], "input" : sample['input'], "profile" : sample['profile']})
         outs_dev.append({"id" : sample['id'], "output" : sample['output']})
 
     
@@ -101,7 +109,10 @@ if __name__ == "__main__":
             pid = p['text']
             p['text'] = database[pid]['content']
             p['title'] = database[pid]['subject']
-        inps_test.append({"id" : sample['id'], "input" : sample['input'], "profile" : sample['profile']})
+        if opts.time_based_separation:
+            inps_test.append({"id" : sample['id'], "input" : sample['input'], "profile" : sample['profile'], "user_id" : sample['user_id']})
+        else:
+            inps_test.append({"id" : sample['id'], "input" : sample['input'], "profile" : sample['profile']})
         
     with open(os.path.join(opts.output_dir, "train_questions.json"), "w") as file:
         json.dump(inps_train, file)
