@@ -70,7 +70,7 @@ The pred files should follow the exact same format as the gold files:
 
 ```
 @misc{salemi2023lamp,
-      title={LaMP: When Large Language Models Meet Personalization}, 
+      title={La{MP}: When Large Language Models Meet Personalization}, 
       author={Alireza Salemi and Sheshera Mysore and Michael Bendersky and Hamed Zamani},
       year={2023},
       eprint={2304.11406},
