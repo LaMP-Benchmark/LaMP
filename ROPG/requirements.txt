@@ -1,0 +1,6 @@
+evaluate==0.4.0
+numpy==1.24.3
+rank_bm25==0.2.2
+torch==2.0.1
+transformers==4.29.2
+rouge_score
