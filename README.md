@@ -1,4 +1,4 @@
-# Codes for papers on Large Language Models Personaliziation
+# Codes for papers on Large Language Models Personalization (LaMP)
 
 [LaMP: When Large Language Models Meet Personalization](https://arxiv.org/abs/2304.11406)
 
