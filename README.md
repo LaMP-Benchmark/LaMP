@@ -94,6 +94,14 @@ The pred files should follow the exact same format as the gold files:
 
 ## Personalizing LLMs with RAG (LaMP)
 
+You first need to create an environment for this using the following script:
+
+```
+python3 -m venv lamp_venv
+source lamp_venv/bin/activate
+pip install -r LaMP/requirements.txt
+```
+
 ### Ranking Profiles based on the Input
 
 The first step is to sort items in each user profile based on the input for the task:
@@ -161,7 +169,13 @@ python evaluate_llm.py \
 
 ## Optimizing Retrieval Model for Personalizing LLMs (ROPG)
 
-This code uses the feedback from LLM to train a retrieval model for personalizing the LLM.
+This code uses the feedback from LLM to train a retrieval model for personalizing the LLM. You first need to create an environment for this using the following script:
+
+```
+python3 -m venv ropg_venv
+source ropg_venv/bin/activate
+pip install -r ROPG/requirements.txt
+```
 
 ### Feedback Generation using LLM for Items in the User Profile
 
@@ -210,7 +224,14 @@ NGPU=/*Number of GPUs*/ python -m torch.distributed.launch --nproc_per_node=/*Nu
 
 ## Retrieval Model Selection for Personalizing LLMs (RSPG)
 
-This section uses the feedback from the LLM based on the performance of different retrieval models to train a retrieval model selector.
+This section uses the feedback from the LLM based on the performance of different retrieval models to train a retrieval model selector. You first need to create an environment for this using the following script:
+
+```
+python3 -m venv rspg_venv
+source rspg_venv/bin/activate
+pip install -r RSPG/requirements.txt
+```
+
 
 ### Feedback Generation using LLM for each Retrieval Model
 
@@ -312,4 +333,4 @@ LaMP (codes and data creation methods) is licensed by Attribution-NonCommercial-
 
 ## Acknowledgments
 
-This work was supported in part by the Center for Intelligent Information Retrieval, in part by NSF grant #2143434, in part by the Office of Naval Research contract number N000142212688, and in part by Lowe's, in part by an Amazon Research Award, Fall 2022 CFP, in part by an award from Google, and in part by and award from Microsoft. Any opinions, findings and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect those of the sponsors.
+This work was supported in part by the Center for Intelligent Information Retrieval, in part by NSF grant #2143434, in part by the Office of Naval Research contract number N000142212688, and in part by Lowe's, in part by an Amazon Research Award, Fall 2022 CFP, in part by an award from Google, and in part by an award from Microsoft. Any opinions, findings and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect those of the sponsors.
