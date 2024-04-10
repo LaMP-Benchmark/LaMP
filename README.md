@@ -254,7 +254,7 @@ You should use the following script with all the retrieval models in your retrie
 
 ### Optimizing Retrieval Model Selector
 
-The first step is to combine all the feebacks got from the previous step and make a training and validation set:
+The first step is to combine all the feedbacks got from the previous step and make a training and validation set:
 
 ```
 cd RSPG
