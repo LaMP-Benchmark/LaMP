@@ -153,7 +153,7 @@ class LaMPEvaluation(object):
         if task_name == "LaMP_1":
             return ["[1]", "[2]"]
         elif task_name == "LaMP_2":
-            return ["food & drink", "sports", "education", "parents", "religion", "travel", "business", "crime", "science & technology", "culture & arts", "entertainment", "politics", "women", "style & beauty", "healthy living"]
+            return ['sci-fi', 'based on a book', 'comedy', 'action', 'twist ending', 'dystopia', 'dark comedy', 'classic', 'psychology', 'fantasy', 'romance', 'thought-provoking', 'social commentary', 'violence', 'true story']
         elif task_name == "LaMP_3":
             return ["1", "2", "3", "4", "5"]
         else:
