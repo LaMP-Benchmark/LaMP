@@ -328,6 +328,20 @@ If you find this repository helpful, please cite the following works!
 }
 ```
 
+[Comparing Retrieval-Augmentation and Parameter-Efficient Fine-Tuning for Privacy-Preserving Personalization of Large Language Models](https://arxiv.org/abs/2409.09510)
+
+```
+@misc{salemi2024comparingretrievalaugmentationparameterefficientfinetuning,
+      title={Comparing Retrieval-Augmentation and Parameter-Efficient Fine-Tuning for Privacy-Preserving Personalization of Large Language Models}, 
+      author={Alireza Salemi and Hamed Zamani},
+      year={2024},
+      eprint={2409.09510},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2409.09510}, 
+}
+```
+
 ## License
 LaMP (codes and data creation methods) is licensed by Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). See the [CC-BY-NC-SA-4.0.txt](CC-BY-NC-SA-4.0.txt) file for details. For the datasets in this benchmark, you should follow their license.
 
