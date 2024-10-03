@@ -2,6 +2,8 @@
 
 [LaMP: When Large Language Models Meet Personalization](https://arxiv.org/abs/2304.11406)
 
+This paper highlights the importance of personalization in the current state of natural language understanding and generation and introduces the LaMP benchmark --- a novel benchmark for training and evaluating language models for producing personalized outputs. LaMP offers a comprehensive evaluation framework with diverse language tasks and multiple entries for each user profile. It consists of seven personalized tasks, spanning across three classification and four text generation tasks. We further propose a retrieval augmentation approach that retrieves personalized items from user profiles to construct personalized prompts for large language models. The experiments conducted to establish fine-tuned and zero-shot baseline results for the benchmark conclude that LMs utilizing profile augmentation outperform their counterparts that do not factor in profile information.
+
 ```
 @misc{salemi2023lamp,
       title={La{MP}: When Large Language Models Meet Personalization}, 
@@ -12,8 +14,6 @@
       primaryClass={cs.CL}
 }
 ```
-
-This paper highlights the importance of personalization in the current state of natural language understanding and generation and introduces the LaMP benchmark --- a novel benchmark for training and evaluating language models for producing personalized outputs. LaMP offers a comprehensive evaluation framework with diverse language tasks and multiple entries for each user profile. It consists of seven personalized tasks, spanning across three classification and four text generation tasks. We further propose a retrieval augmentation approach that retrieves personalized items from user profiles to construct personalized prompts for large language models. The experiments conducted to establish fine-tuned and zero-shot baseline results for the benchmark conclude that LMs utilizing profile augmentation outperform their counterparts that do not factor in profile information.
 
 [Optimization Methods for Personalizing Large Language Models through Retrieval Augmentation](https://arxiv.org/abs/2404.05970)
 
@@ -27,6 +27,22 @@ This paper studies retrieval-augmented approaches for personalizing large langua
       eprint={2404.05970},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
+}
+```
+
+[Comparing Retrieval-Augmentation and Parameter-Efficient Fine-Tuning for Privacy-Preserving Personalization of Large Language Models](https://arxiv.org/abs/2409.09510)
+
+Privacy-preserving methods for personalizing large language models (LLMs) are relatively under-explored. There are two schools of thought on this topic: (1) generating personalized outputs by personalizing the input prompt through retrieval augmentation from the user's personal information (RAG-based methods), and (2) parameter-efficient fine-tuning of LLMs per user that considers efficiency and space limitations (PEFT-based methods). This paper presents the first systematic comparison between two approaches on a wide range of personalization tasks using seven diverse datasets. Our results indicate that RAG-based and PEFT-based personalization methods on average yield 14.92% and 1.07% improvements over the non-personalized LLM, respectively. We find that combining RAG with PEFT elevates these improvements to 15.98%. Additionally, we identify a positive correlation between the amount of user data and PEFT's effectiveness, indicating that RAG is a better choice for cold-start users (i.e., user's with limited personal data).
+
+```
+@misc{salemi2024comparingretrievalaugmentationparameterefficientfinetuning,
+      title={Comparing Retrieval-Augmentation and Parameter-Efficient Fine-Tuning for Privacy-Preserving Personalization of Large Language Models}, 
+      author={Alireza Salemi and Hamed Zamani},
+      year={2024},
+      eprint={2409.09510},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2409.09510}, 
 }
 ```
 
