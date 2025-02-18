@@ -314,6 +314,40 @@ NGPU=/*Number of GPUs*/ python -m torch.distributed.launch --nproc_per_node=/*Nu
     --model_path /*address to the checkpoint to be evaluated*/ \
 ```
 
+## PEFT for Personalizing LLMs
+
+This section trains an LLM per user on its personal data usign LoRA. You first need to create an environment for this using the following script:
+
+```
+python3 -m venv peft_venv
+source peft_venv/bin/activate
+pip install -r PEFT/requirements.txt
+```
+
+### Training LLM using LoRA on personal data
+In order to train a LoRA adaptor per user, you can use the following script:
+
+```
+cd PEFT
+python train_peft.py \
+      --train_data /*address to sorted training data using the previous step*/ \
+      --task /*name of the task [LaMP-1, LaMP-2, ..., LaMP-7]*/ \
+      --output_dir /*output directory to save per user checkpoints*/ \
+      --lora_r /*lora r parameter*/
+```
+
+### inference using per user LLM
+In order to inference using the LoRA adaptor per user, you can use the following script:
+
+```
+cd PEFT
+python evaluate_llm.py \
+      --test_data /*address to sorted test/validation data using the previous step*/ \
+      --task /*name of the task [LaMP-1, LaMP-2, ..., LaMP-7]*/ \
+      --output_dir /*output directory to save outputs*/ \
+      --user_checkpoints /*directory containing per user checkpoints*/
+```
+
 ## Reference
 
 If you find this repository helpful, please cite the following works!
