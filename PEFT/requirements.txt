@@ -1,0 +1,11 @@
+datasets==2.8.0
+regex==2022.10.31
+sentencepiece==0.1.97
+tokenizers==0.11.1
+torch==2.0.1
+tqdm==4.64.1
+transformers==4.28.0
+evaluate
+absl-py
+rouge-score
+peft
